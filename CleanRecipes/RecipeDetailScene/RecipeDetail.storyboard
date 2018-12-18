@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Recipe Detail View Controller-->
+        <scene sceneID="jAO-TE-pcH">
+            <objects>
+                <viewController storyboardIdentifier="RecipeDetailViewController" id="zJV-bk-A6K" customClass="RecipeDetailViewController" customModule="CleanRecipes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ahB-K2-hqh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preparation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaD-2D-SyF">
+                                <rect key="frame" x="16" y="32" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ayO-OS-Ow7">
+                                <rect key="frame" x="16" y="65" width="343" height="590"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86054360190086632" green="0.95686274510000002" blue="0.93348137962606592" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GaD-2D-SyF" firstAttribute="centerX" secondItem="ahB-K2-hqh" secondAttribute="centerX" id="6vQ-JH-AYj"/>
+                            <constraint firstItem="GaD-2D-SyF" firstAttribute="top" secondItem="4WE-bA-gU8" secondAttribute="top" constant="12" id="I0H-xd-hmr"/>
+                            <constraint firstItem="GaD-2D-SyF" firstAttribute="leading" secondItem="4WE-bA-gU8" secondAttribute="leading" constant="16" id="N1e-S8-oqP"/>
+                            <constraint firstItem="4WE-bA-gU8" firstAttribute="bottom" secondItem="ayO-OS-Ow7" secondAttribute="bottom" constant="12" id="eiv-46-vbp"/>
+                            <constraint firstItem="ayO-OS-Ow7" firstAttribute="leading" secondItem="4WE-bA-gU8" secondAttribute="leading" constant="16" id="gua-jU-wJn"/>
+                            <constraint firstItem="ayO-OS-Ow7" firstAttribute="centerX" secondItem="ahB-K2-hqh" secondAttribute="centerX" id="hyZ-Fo-PWZ"/>
+                            <constraint firstItem="ayO-OS-Ow7" firstAttribute="top" secondItem="GaD-2D-SyF" secondAttribute="bottom" constant="12" id="q57-jM-iVg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4WE-bA-gU8"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="preparationTextView" destination="ayO-OS-Ow7" id="DYm-6S-jR0"/>
+                    </connections>
+                </viewController>
+                <navigationItem id="7Tr-oQ-rjR" userLabel="Add Recipe"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QgH-tO-evj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+</document>
